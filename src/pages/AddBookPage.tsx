@@ -43,11 +43,6 @@ const AddBookPage: React.FC = () => {
           <button type="submit" className="bg-blue-500 text-white rounded-md px-4 py-2">Add Book</button>
         </form>
       </div>
-      <style jsx global>{`
-        .bg-bookstore {
-          background-image: url('/images/book-store.jpg');
-        }
-      `}</style>
     </RootLayout>
 
   );
