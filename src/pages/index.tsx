@@ -11,7 +11,7 @@ const IndexPage: React.FC = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setImageUrl(generateRandomImageUrl());
-    }, 3000);
+    }, 3000); // Change the interval to trigger every 3 seconds
     return () => clearInterval(intervalId);
   }, []);
 
