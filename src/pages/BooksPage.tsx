@@ -1,4 +1,5 @@
 import React from 'react';
+import RootLayout from '../layout';
 
 interface Book {
   title: string;
@@ -12,7 +13,8 @@ interface BooksPageProps {
 
 const BooksPage: React.FC<BooksPageProps> = ({ books }) => {
   return (
-    <div className="container mx-auto mt-8">
+    <RootLayout>    
+      <div className="container mx-auto mt-8">
       <h1 className="text-2xl font-bold mb-4">List of Books</h1>
       <ul>
         {books.map((book, index) => (
@@ -24,6 +26,8 @@ const BooksPage: React.FC<BooksPageProps> = ({ books }) => {
         ))}
       </ul>
     </div>
+  </RootLayout>
+
   );
 };
 

@@ -1,7 +1,11 @@
 import Link from "next/link";
+import RootLayout from '../layout';
+
+
 
 export default function Home() {
   return (
+    <RootLayout>
     <div>
       <nav className="bg-gray-800 p-4">
         <div className="max-w-7xl mx-auto px-4">
@@ -28,9 +32,8 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <div className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('/images/book-store.jpg')" }}>
-        {/* Content here */}
-      </div>
     </div>
+    </RootLayout>
+
   );
 }

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import RootLayout from '../layout';
 
 const AddBookPage: React.FC = () => {
   const [title, setTitle] = useState('');
@@ -23,36 +24,33 @@ const AddBookPage: React.FC = () => {
   };
 
   return (
-    <div className="mt-8">
-      <h2 className="text-xl font-bold mb-4">Add a New Book</h2>
-      <form onSubmit={handleSubmit}>
-      <div className="mb-4">
-        <label htmlFor="title" className="block text-gray-700 font-bold mb-2">Title:</label>
-        <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
-        </div>
+    <RootLayout>
+      <div className="mt-8">
+        <h2 className="text-xl font-bold mb-4">Add a New Book</h2>
+        <form onSubmit={handleSubmit}>
         <div className="mb-4">
-        <label htmlFor="author" className="block text-gray-700 font-bold mb-2">Author:</label>
-        <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
-        </div>
-        <div className="mb-4">
-        <label htmlFor="price" className="block text-gray-700 font-bold mb-2">Price:</label>
-        <input type="text" id="price" value={price} onChange={(e) => setPrice(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
-        </div>
-        <button type="submit" className="bg-blue-500 text-white rounded-md px-4 py-2">Add Book</button>
-      </form>
-    </div>
+          <label htmlFor="title" className="block text-gray-700 font-bold mb-2">Title:</label>
+          <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
+          </div>
+          <div className="mb-4">
+          <label htmlFor="author" className="block text-gray-700 font-bold mb-2">Author:</label>
+          <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
+          </div>
+          <div className="mb-4">
+          <label htmlFor="price" className="block text-gray-700 font-bold mb-2">Price:</label>
+          <input type="text" id="price" value={price} onChange={(e) => setPrice(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
+          </div>
+          <button type="submit" className="bg-blue-500 text-white rounded-md px-4 py-2">Add Book</button>
+        </form>
+      </div>
+      <style jsx global>{`
+        .bg-bookstore {
+          background-image: url('/images/book-store.jpg');
+        }
+      `}</style>
+    </RootLayout>
+
   );
 };
 
 export default AddBookPage;
-
-
-
-
-
-
-
-
-
-
-
