@@ -23,21 +23,6 @@ const AddBookPage: React.FC = () => {
 
   const translations = language === 'en' ? enTranslations : frTranslations;
 
-
-
-  // useEffect(() => {
-  //   const fetchBooks = async () => {
-  //     try {
-  //       const response = await axios.get('/api/books');
-  //       setBooks(response.data);
-  //     } catch (error) {
-  //       console.error('Error fetching books:', error);
-  //     }
-  //   };
-
-  //   fetchBooks();
-  // }, []);
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -92,7 +77,7 @@ const AddBookPage: React.FC = () => {
             <label htmlFor="price" className="block text-gray-700 font-bold mb-2">{translations['price']}:</label>
             <input type="number" id="price" value={price} onChange={(e) => setPrice(e.target.value ? parseInt(e.target.value) : '')} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
           </div>
-          <button type="submit" className="bg-blue-500 text-white rounded-md px-4 py-2">{translations['addBook']}</button>
+          <button type="submit" className="border border-black text-black font-semibold rounded-md px-4 py-2 bg-white hover:bg-gray-200 transition-colors duration-300">{translations['addBook']}</button>
           {errorMessage && <p className="text-red-500 mt-2">{errorMessage}</p>}
         </form>
       </div>
