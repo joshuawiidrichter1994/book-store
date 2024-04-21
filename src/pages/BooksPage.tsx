@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import RootLayout from '../layout';
-import { LanguageContext } from '../context/LanguageContext';
+import { LanguageContext} from '../context/LanguageContext';
+import { convertPriceToCurrency } from '../providers/LanguageProvider';
 import enTranslations from '../../public/translations/en.json'; // Import English translations
 import frTranslations from '../../public/translations/fr.json'; // Import French translations
 
@@ -15,7 +16,7 @@ interface BooksPageProps {
 }
 
 const BooksPage: React.FC<BooksPageProps> = ({ books }) => {
-  const { language } = useContext(LanguageContext);
+  const { language, currency } = useContext(LanguageContext);
 
   // Load translations based on language
   const translations = language === 'en' ? enTranslations : frTranslations;
@@ -29,7 +30,7 @@ const BooksPage: React.FC<BooksPageProps> = ({ books }) => {
             <div key={index} className="border border-gray-300 rounded-md p-4">
               <div className="font-bold">{book.title}</div>
               <div>{book.author}</div>
-              <div> {translations['currency']} {book.price}</div>
+              <div> {translations['currency']} {convertPriceToCurrency(book.price, currency)}</div>
             </div>
           ))}
         </div>
