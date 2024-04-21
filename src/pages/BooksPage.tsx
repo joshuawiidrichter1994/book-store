@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import RootLayout from '../layout';
+import { LanguageContext } from '../context/LanguageContext';
+import enTranslations from '../../public/translations/en.json'; // Import English translations
+import frTranslations from '../../public/translations/fr.json'; // Import French translations
 
 interface Book {
   title: string;
@@ -12,16 +15,21 @@ interface BooksPageProps {
 }
 
 const BooksPage: React.FC<BooksPageProps> = ({ books }) => {
+  const { language } = useContext(LanguageContext);
+
+  // Load translations based on language
+  const translations = language === 'en' ? enTranslations : frTranslations;
+
   return (
     <RootLayout>    
       <div className="container mx-auto mt-8">
-        <h1 className="text-2xl font-bold mb-4">List of Books</h1>
+        <h1 className="text-2xl font-bold mb-4">{translations['listOfBooks']}</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {books.map((book, index) => (
             <div key={index} className="border border-gray-300 rounded-md p-4">
               <div className="font-bold">{book.title}</div>
-              <div>Author: {book.author}</div>
-              <div>Price: ${book.price}</div>
+              <div>{book.author}</div>
+              <div> {translations['currency']} {book.price}</div>
             </div>
           ))}
         </div>

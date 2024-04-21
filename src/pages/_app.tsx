@@ -1,9 +1,16 @@
 // _app.tsx
-import '../globals.css'; // Import global CSS
-import { AppProps } from 'next/app';
+
+import React from 'react';
+import type { AppProps } from 'next/app';
+import LanguageProvider from '../providers/LanguageProvider';
+import '../globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <LanguageProvider>
+      <Component {...pageProps} />
+    </LanguageProvider>
+  );
 }
 
 export default MyApp;

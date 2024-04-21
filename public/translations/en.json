@@ -1,10 +1,17 @@
 {
+    "language": "Language",
     "books": "Books",
     "addBook": "Add book",
     "newBook": "Add a new book",
     "title": "Title",
     "author": "Author",
     "price": "Price",
-    "listOfBooks": "List of books"
+    "listOfBooks": "List of books",
+    "bookAddedModalHeader": "Book Added Successfully!",
+    "bookAddedModalText": "The new book has been added",
+    "requiredFieldsError": "Please fill out all fields",
+    "duplicateBookError": "Book already exists",
+    "closeBtn": "Close",
+    "currency": "$"
   }
   
