@@ -66,15 +66,15 @@ const AddBookPage: React.FC = () => {
         <h2 className="text-xl font-bold mb-4">{translations['newBook']}</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="title" className="block text-gray-700 font-bold mb-2">{translations['title']}:</label>
-            <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
+            <label htmlFor="title" className="block text-black-700 font-bold mb-2 mt-8">{translations['title']}:</label>
+            <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} className="border border-black-300 rounded-md px-4 py-2 w-full" />
           </div>
           <div className="mb-4">
-            <label htmlFor="author" className="block text-gray-700 font-bold mb-2">{translations['author']}:</label>
-            <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
+            <label htmlFor="author" className="block text-black-700 font-bold mb-2">{translations['author']}:</label>
+            <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} className="border border-black-300 rounded-md px-4 py-2 w-full" />
           </div>
           <div className="mb-4">
-            <label htmlFor="price" className="block text-gray-700 font-bold mb-2">{translations['price']}:</label>
+            <label htmlFor="price" className="block text-black-700 font-bold mb-2">{translations['price']}:</label>
             <input type="number" id="price" value={price} onChange={(e) => setPrice(e.target.value ? parseInt(e.target.value) : '')} className="border border-gray-300 rounded-md px-4 py-2 w-full" />
           </div>
           <button type="submit" className="border border-black text-black font-semibold rounded-md px-4 py-2 bg-white hover:bg-gray-200 transition-colors duration-300">{translations['addBook']}</button>
