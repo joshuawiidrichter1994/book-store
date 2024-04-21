@@ -34,6 +34,12 @@ body {
   }
 }
 
+.menu-modal {
+  height: 280px;
+  font-size: 22px;
+  border-bottom: solid black;
+}
+
 .main-content {
   margin: 100px 0px 0px 0px;
 }
