@@ -8,6 +8,7 @@ const IndexPage: React.FC = () => {
     'book-2.jpg',
     'book-3.jpg',
     'book-4.jpg',
+    'book-5.jpg',
     'book-6.jpg',
     'book-7.jpg',
     'book-8.jpg',
@@ -27,7 +28,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <RootLayout>
-      <div className="relative overflow-hidden h-screen bg-white mt-8 mb-8 flex justify-center items-center"> {/* Added bottom margin */}
+      <div className="relative overflow-hidden h-screen bg-white mt-8 flex justify-center items-center"> {/* Added bottom margin */}
         <div className="images-container">
           <img
             src={`/images/${bookImages[imageIndex]}`}
