@@ -41,7 +41,7 @@ const Header = () => {
   const translations = language === "en" ? enTranslations : frTranslations;
 
   return (
-    <header className="bg-white text-gray-900 border-b-2 border-gray-700 py-4">
+    <header className="bg-white text-gray-900 border-b-2 border-gray-700 py-4 fixed top-0 left-0 w-full z-50">
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16 items-center">

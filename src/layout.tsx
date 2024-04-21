@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico.png" />
       </Head>
       <Header />
-      <div className="bg-white flex-grow">{children}</div> {/* Use flex-grow to fill remaining space */}
+      <div className="main-content bg-white flex-grow">{children}</div> {/* Use flex-grow to fill remaining space */}
       <Footer />
     </div>
   );
