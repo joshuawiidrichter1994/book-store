@@ -88,7 +88,7 @@ const AddBookPage: React.FC = () => {
               <h2 className="text-xl font-semibold mb-4">{translations['bookAddedModalHeader']}</h2>
               <p className="text-gray-600">{translations['bookAddedModalText']}</p>
             </div>
-            <button onClick={closeModal} className="bg-blue-500 text-white rounded-md px-4 py-2 mt-6">{translations['closeBtn']}</button>
+            <button onClick={closeModal} className="border border-black text-black font-semibold rounded-md px-4 py-2 bg-white hover:bg-gray-200 transition-colors duration-300 mt-4">{translations['closeBtn']}</button>
           </div>
         </div>
       )}
