@@ -38,5 +38,160 @@
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "price": 22.99
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "price": 15.99
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "price": 16.99
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "price": 17.99
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire",
+    "author": "J.K. Rowling",
+    "price": 18.99
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "author": "J.K. Rowling",
+    "price": 19.99
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "author": "J.K. Rowling",
+    "price": 20.99
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows",
+    "author": "J.K. Rowling",
+    "price": 21.99
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "price": 13.99
+  },
+  {
+    "title": "Catching Fire",
+    "author": "Suzanne Collins",
+    "price": 14.99
+  },
+  {
+    "title": "Mockingjay",
+    "author": "Suzanne Collins",
+    "price": 15.99
+  },
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "price": 11.99
+  },
+  {
+    "title": "Angels & Demons",
+    "author": "Dan Brown",
+    "price": 12.99
+  },
+  {
+    "title": "The Lost Symbol",
+    "author": "Dan Brown",
+    "price": 13.99
+  },
+  {
+    "title": "Inferno",
+    "author": "Dan Brown",
+    "price": 14.99
+  },
+  {
+    "title": "Origin",
+    "author": "Dan Brown",
+    "price": 15.99
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "price": 16.99
+  },
+  {
+    "title": "The Girl Who Played with Fire",
+    "author": "Stieg Larsson",
+    "price": 17.99
+  },
+  {
+    "title": "The Girl Who Kicked the Hornet's Nest",
+    "author": "Stieg Larsson",
+    "price": 18.99
+  },
+  {
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "price": 19.99
+  },
+  {
+    "title": "Sharp Objects",
+    "author": "Gillian Flynn",
+    "price": 20.99
+  },
+  {
+    "title": "Dark Places",
+    "author": "Gillian Flynn",
+    "price": 21.99
+  },
+  {
+    "title": "The Help",
+    "author": "Kathryn Stockett",
+    "price": 22.99
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 23.99
+  },
+  {
+    "title": "The Secret",
+    "author": "Rhonda Byrne",
+    "price": 24.99
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "price": 25.99
+  },
+  {
+    "title": "Looking for Alaska",
+    "author": "John Green",
+    "price": 26.99
+  },
+  {
+    "title": "Paper Towns",
+    "author": "John Green",
+    "price": 27.99
+  },
+  {
+    "title": "The Maze Runner",
+    "author": "James Dashner",
+    "price": 28.99
+  },
+  {
+    "title": "The Scorch Trials",
+    "author": "James Dashner",
+    "price": 29.99
+  },
+  {
+    "title": "The Death Cure",
+    "author": "James Dashner",
+    "price": 30.99
+  },
+  {
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "price": 31.99
   }
 ]
