@@ -6,8 +6,6 @@ import Header from "./components/Header"
 export default function RootLayout({ children }: { children: ReactNode }) {
   const router = useRouter();
 
-  console.log("Current Path:", router.pathname);
-
   return (
     <>
       <Head>
