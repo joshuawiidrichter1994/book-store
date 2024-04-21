@@ -43,7 +43,7 @@ const AddBookPage: React.FC = () => {
 
   return (
     <RootLayout>
-      <div className="mt-8">
+      <div className="mt-8 mx-8">
         <h2 className="text-xl font-bold mb-4">Add a New Book</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
