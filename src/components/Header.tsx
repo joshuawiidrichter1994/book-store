@@ -55,12 +55,12 @@ const Header = () => {
           <div className="flex items-center">
             <div className="hidden md:flex md:ml-10 md:space-x-4 items-center">
               <Link href="/BooksPage">
-                <span className="header-text text-gray-900 hover:bg-gray-300 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold cursor-pointer">
+                <span className="header-text text-gray-900 px-3 py-2 rounded-md text-base font-semibold cursor-pointer transition duration-300 border border-transparent hover:border-gray-300 hover:text-gray-900">
                   {translations.books}
                 </span>
               </Link>
               <Link href="/AddBookPage">
-                <span className="header-text text-gray-900 hover:bg-gray-300 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold cursor-pointer">
+                <span className="header-text text-gray-900 px-3 py-2 rounded-md text-base font-semibold cursor-pointer transition duration-300 border border-transparent hover:border-gray-300 hover:text-gray-900">
                   {translations.addBook}
                 </span>
               </Link>

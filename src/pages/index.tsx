@@ -28,12 +28,14 @@ const IndexPage: React.FC = () => {
 
   return (
     <RootLayout>
-      <div className="relative overflow-hidden h-screen aspect-w-16 aspect-h-9 bg-white mt-8">
-        <img
-          src={`/images/${bookImages[imageIndex]}`}
-          alt={`Book Slide ${imageIndex + 1}`}
-          className="object-contain w-full h-full "
-        />
+      <div className="relative overflow-hidden h-screen bg-white mt-8 flex justify-center items-center">
+        <div className="images-container">
+          <img
+            src={`/images/${bookImages[imageIndex]}`}
+            alt={`Book Slide ${imageIndex + 1}`}
+            className="image object-cover w-full h-full"
+          />
+        </div>
       </div>
     </RootLayout>
   );
