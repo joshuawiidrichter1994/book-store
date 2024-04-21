@@ -23,16 +23,18 @@ const BooksPage: React.FC<BooksPageProps> = ({ books }) => {
 
   return (
     <RootLayout>    
-      <div className="container mx-auto mt-8">
-        <h1 className="text-2xl font-bold mb-4">{translations['listOfBooks']}</h1>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          {books.map((book, index) => (
-            <div key={index} className="border border-gray-300 rounded-md p-4">
-              <div className="font-bold">{book.title}</div>
-              <div>{book.author}</div>
-              <div> {translations['currency']} {convertPriceToCurrency(book.price, currency)}</div>
-            </div>
-          ))}
+      <div className="min-h-screen flex flex-col"> {/* Add min-h-screen and flex classes */}
+        <div className="container mx-auto mt-8 flex-grow"> {/* Add flex-grow class */}
+          <h1 className="text-2xl font-bold mb-4">{translations['listOfBooks']}</h1>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            {books.map((book, index) => (
+              <div key={index} className="border border-gray-300 rounded-md p-4">
+                <div className="font-bold">{book.title}</div>
+                <div>{book.author}</div>
+                <div> {translations['currency']} {convertPriceToCurrency(book.price, currency)}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </RootLayout>
