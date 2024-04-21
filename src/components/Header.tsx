@@ -53,6 +53,7 @@ const Header = () => {
               <Link href="/AddBookPage">
                 <span className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Add Book</span>
               </Link>
+              <div className="text-gray-300">|</div>
               {/* Language Dropdown */}
               <div className="relative ml-4" ref={dropdownRef}>
                 <button onClick={toggleLanguageDropdown} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
