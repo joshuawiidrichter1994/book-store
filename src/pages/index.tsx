@@ -2,26 +2,37 @@ import React, { useState, useEffect } from 'react';
 import RootLayout from '../layout';
 
 const IndexPage: React.FC = () => {
-  // Function to generate a random image URL
-  const generateRandomImageUrl = () => `https://source.unsplash.com/random/1600x900?sig=${Math.random()}`;
+  // Array of book image file names
+  const bookImages = [
+    'book-1.jpg',
+    'book-2.jpg',
+    'book-3.jpg',
+    'book-4.jpg',
+    'book-5.jpg',
+    'book-6.jpg',
+    'book-7.jpg',
+    'book-8.jpg',
+  ];
 
-  const [imageUrl, setImageUrl] = useState(generateRandomImageUrl());
+  const [imageIndex, setImageIndex] = useState(0);
 
-  // Function to update the image URL every 3 seconds
+  // Function to update the image index every 4 seconds
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setImageUrl(generateRandomImageUrl());
-    }, 3000); // Change the interval to trigger every 3 seconds
+      // Calculate the next image index, looping back to the start if necessary
+      const nextIndex = (imageIndex + 1) % bookImages.length;
+      setImageIndex(nextIndex);
+    }, 4000); // Change the interval to trigger every 4 seconds
     return () => clearInterval(intervalId);
-  }, []);
+  }, [imageIndex, bookImages.length]);
 
   return (
     <RootLayout>
-      <div className="relative overflow-hidden h-screen">
+      <div className="relative overflow-hidden h-screen aspect-w-16 aspect-h-9 bg-white mt-8">
         <img
-          src={imageUrl}
-          alt="Random Slide"
-          className="object-cover w-full h-full"
+          src={`/images/${bookImages[imageIndex]}`}
+          alt={`Book Slide ${imageIndex + 1}`}
+          className="object-contain w-full h-full "
         />
       </div>
     </RootLayout>

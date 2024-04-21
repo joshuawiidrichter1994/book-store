@@ -41,35 +41,34 @@ const Header = () => {
   const translations = language === "en" ? enTranslations : frTranslations;
 
   return (
-    <header className="bg-gradient-to-r from-blue-300 to-blue-800 text-white py-4">
+    <header className="bg-white text-gray-900 border-b-2 border-gray-700 py-4">
+
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/">
-                <span className="text-white text-2xl font-bold cursor-pointer">
-                  UrbanEagle {translations.books}
-                </span>
+                  <img src="./images/logo.png"/>
               </Link>
             </div>
           </div>
           <div className="flex items-center">
             <div className="hidden md:flex md:ml-10 md:space-x-4 items-center">
               <Link href="/BooksPage">
-                <span className="text-white hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-base font-semibold cursor-pointer">
+                <span className="header-text text-gray-900 hover:bg-gray-300 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold cursor-pointer">
                   {translations.books}
                 </span>
               </Link>
               <Link href="/AddBookPage">
-                <span className="text-white hover:bg-blue-400 hover:text-white px-3 py-2 rounded-md text-base font-semibold cursor-pointer">
+                <span className="header-text text-gray-900 hover:bg-gray-300 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold cursor-pointer">
                   {translations.addBook}
                 </span>
               </Link>
-              <div className="text-gray-300">|</div>
+              <div className="text-gray-900">|</div>
               <div className="relative ml-4" ref={dropdownRef}>
                 <button
                   onClick={toggleLanguageDropdown}
-                  className="text-white hover:text-white px-3 py-2 rounded-md text-base font-semibold cursor-pointer"
+                  className="header-text text-gray-900 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold cursor-pointer"
                 >
                   {translations.language}
                 </button>
@@ -78,13 +77,13 @@ const Header = () => {
                     <ul>
                       <li
                         onClick={() => handleLanguageChange("en")}
-                        className="cursor-pointer px-4 py-2 hover:bg-blue-400 hover:text-white text-gray-900 text-sm font-semibold"
+                        className="dropdown-text cursor-pointer px-4 py-2 hover:bg-gray-300 hover:text-gray-900 text-gray-900 text-sm font-semibold"
                       >
                         English
                       </li>
                       <li
                         onClick={() => handleLanguageChange("fr")}
-                        className="cursor-pointer px-4 py-2 hover:bg-blue-400 hover:text-white text-gray-900 text-sm font-semibold"
+                        className="dropdown-text cursor-pointer px-4 py-2 hover:bg-gray-300 hover:text-gray-900 text-gray-900 text-sm font-semibold"
                       >
                         French
                       </li>

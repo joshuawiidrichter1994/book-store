@@ -9,11 +9,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <Head>
-        <title>UrbanEagle Books</title>
+        <title>Urban Eagle Books</title>
         <link rel="icon" href="/favicon.ico.png" />
       </Head>
       <Header />
-      <div className={`h-screen`}>
+      <div className="bg-white h-screen">
         {children}
       </div>
     </>
