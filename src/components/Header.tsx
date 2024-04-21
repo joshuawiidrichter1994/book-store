@@ -93,7 +93,7 @@ const Header = () => {
                       {translations.addBook}
                     </span>
                   </Link>
-                  <div className="mt-4">
+                  <div>
                     <button className="header-text text-gray-900 hover:text-gray-900  font-semibold cursor-pointer" onClick={() => changeLanguage("en")}>
                       English
                     </button>
