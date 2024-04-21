@@ -37,7 +37,10 @@ export async function getServerSideProps() {
 
   const filePath = path.join(process.cwd(), 'public/data', 'books.json');
   const jsonData = fs.readFileSync(filePath, 'utf-8');
-  const books: Book[] = JSON.parse(jsonData);
+  let books: Book[] = JSON.parse(jsonData);
+
+  // Reverse the array of books to display the newly added book first
+  books = books.reverse();
 
   // Pass data to the page component as props
   return { props: { books } };
