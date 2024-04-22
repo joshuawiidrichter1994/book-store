@@ -28,7 +28,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <RootLayout>
-      <div className="relative overflow-hidden h-screen bg-white mt-8 flex justify-center items-center"> {/* Added bottom margin */}
+      <div className="relative overflow-hidden bg-white mt-8 flex justify-center items-center">
         <div className="image-container">
           <img
             src={`/images/${bookImages[imageIndex]}`}

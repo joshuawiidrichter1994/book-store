@@ -10,8 +10,17 @@
 
   ## About the project
 
-  This is a book store website that has been developed using Next.js, Tailwind, and TypeScript. It supports the following fetures:
+  This is a book store website that has been developed using Next.js, Tailwind, and TypeScript. It supports the following features:
 
-  - view list of books along with `title`, `author`, and `price` that is pulled from a `json` file
-  - add a book via a form which will update the book list `json` file (form also has some basic validation in place)
-  - language toggle (the platform supports both the English and French language)
+  - list of books along with `title`, `author`, and `price` that is pulled from a `json` file
+  - functionality to add a book via a form which will update the book list `json` file (form also has some basic validation in place)
+  - language toggle (the platform can toggle between both English and French)
+
+  ### Development choices made
+
+  #### Structure / Design:
+
+  - the site was been built with Header and Foorter components that is present throughout all pages. The Header is fixed, so that when the user scrolls down, the Header remains at the top
+  - in terms of pages, there is a home page, book list page, and an add book page containing the form to add a book
+  - the general design was kept basic, with the main goal in mind being to demonstrate the necessary functionalities to meet the user stories
+  - the site is mobile, tablet, and desktop friendly with a breakpoint at 767px (everything below 767px is for tablet down and everything above 767px is for desktop)
