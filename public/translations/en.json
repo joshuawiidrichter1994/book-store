@@ -11,6 +11,7 @@
     "bookAddedModalText": "The new book has been added",
     "requiredFieldsError": "Please fill out all fields",
     "duplicateBookError": "Book already exists",
+    "addBookError": "An error occurred while adding the book.",
     "closeBtn": "Close",
     "currency": "$",
     "slogan": "Where Every Page Holds a New Adventure..."

@@ -51,7 +51,7 @@ const AddBookPage: React.FC = () => {
       setShowModal(true);
     } catch (error) {
       console.error('Error adding book:', error);
-      setErrorMessage('An error occurred while adding the book.');
+      setErrorMessage(translations['addBookError']);
     }
   };
 

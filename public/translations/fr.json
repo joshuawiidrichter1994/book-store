@@ -11,6 +11,7 @@
     "bookAddedModalText": "Le nouveau livre a été ajouté",
     "requiredFieldsError": "Veuillez remplir tous les champs",
     "duplicateBookError": "Le livre existe déjà",
+    "addBookError": "Une erreur s'est produite lors de l'ajout du livre.",
     "closeBtn": "Fremer",
     "currency": "€",
     "slogan": "Où chaque page contient une nouvelle aventure..."
