@@ -3,7 +3,7 @@ import axios from 'axios';
 import RootLayout from '../layout';
 import { LanguageContext } from '../context/LanguageContext';
 import enTranslations from '../../public/translations/en.json';
-import frTranslations from '../../public/translations/fr.json';
+import frTranslations from '../../public/translations/fr.json'; // Import French translations
 
 interface Book {
   title: string;
