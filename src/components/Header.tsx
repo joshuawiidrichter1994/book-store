@@ -39,7 +39,6 @@ const Header = () => {
   const handleLanguageChange = (selectedLanguage: Language) => {
     setLanguage(selectedLanguage);
     setIsLanguageDropdownOpen(false);
-    console.log("Selected language:", selectedLanguage);
   };
 
   // Load translations based on language
@@ -48,7 +47,6 @@ const Header = () => {
   const changeLanguage = (selectedLanguage: Language) => {
     setLanguage(selectedLanguage);
     setIsMobileMenuOpen(false);
-    console.log("Selected language:", selectedLanguage);
   };
 
   return (
