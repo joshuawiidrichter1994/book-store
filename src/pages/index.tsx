@@ -14,9 +14,27 @@ const IndexPage: React.FC = () => {
     'book-8.jpg',
   ];
 
-  const [imageIndex, setImageIndex] = useState(0);
+  // Determine if it's a mobile device based on window width
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    // Set initial state
+    handleResize();
+
+    // Add event listener to update isMobile state on window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Function to update the image index every 4 seconds
+  const [imageIndex, setImageIndex] = useState(0);
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       // Calculate the next image index, looping back to the start if necessary
@@ -30,11 +48,36 @@ const IndexPage: React.FC = () => {
     <RootLayout>
       <div className="relative overflow-hidden bg-white mt-8 flex justify-center items-center">
         <div className="image-container">
-          <img
-            src={`/images/${bookImages[imageIndex]}`}
-            alt={`Book Slide ${imageIndex + 1}`}
-            className="image object-cover w-full h-full"
-          />
+          {/* Display first two book images stacked for screens 767px and below */}
+          {isMobile && (
+            <>
+
+
+              <img
+                src={`/images/${bookImages[3]}`}
+                alt="Book 1"
+                className="image object-cover w-full h-full"
+              />
+              <div className="mt-8">              
+                <span className="slogan-text text-center block mb-4 text-2xl font-light">Urban Eagle Books</span>
+                <span className="text-center block mb-8 text-lg font-light">Where Every Page Holds a New Adventure...</span>
+              </div>
+              <img
+                src={`/images/${bookImages[4]}`}
+                alt="Book 2"
+                className="image object-cover w-full h-full mt-4"
+              />
+
+            </>
+          )}
+          {/* Display single book image for desktop and screens above 767px */}
+          {!isMobile && (
+            <img
+              src={`/images/${bookImages[imageIndex]}`}
+              alt={`Book Slide ${imageIndex + 1}`}
+              className="image object-cover w-full h-full"
+            />
+          )}
         </div>
       </div>
     </RootLayout>
