@@ -20,7 +20,7 @@
 
   #### Structure / Design:
 
-  - the site was been built with Header and Foorter components that is present throughout all pages. The Header is fixed, so that when the user scrolls down, the Header remains at the top
+  - the site has been built with the Header and Foorter components present throughout all pages. The Header is fixed, so that when the user scrolls down, the Header remains at the top
   - in terms of pages, there is a home page, book list page, and an add book page containing the form to add a book
-  - the general design was kept basic, with the main goal in mind being to demonstrate the necessary functionalities to meet the user stories
+  - the general design was kept basic, with the main goal in mind being to meet the necessary requirements as per the user stories
   - the site is mobile, tablet, and desktop friendly with a breakpoint at 767px (everything below 767px is for tablet down and everything above 767px is for desktop)

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import RootLayout from '../layout';
-import { LanguageContext} from '../context/LanguageContext';
+import { LanguageContext } from '../context/LanguageContext';
 import { convertPriceToCurrency } from '../providers/LanguageProvider';
 import enTranslations from '../../public/translations/en.json'; // Import English translations
 import frTranslations from '../../public/translations/fr.json'; // Import French translations
@@ -22,9 +22,9 @@ const BooksPage: React.FC<BooksPageProps> = ({ books }) => {
   const translations = language === 'en' ? enTranslations : frTranslations;
 
   return (
-    <RootLayout>    
-      <div className="min-h-screen flex flex-col"> {/* Add min-h-screen and flex classes */}
-        <div className="container mx-auto mt-8 flex-grow"> {/* Add flex-grow class */}
+    <RootLayout>
+      <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="container mt-8">
           <h1 className="text-2xl font-bold mb-4">{translations['listOfBooks']}</h1>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {books.map((book, index) => (

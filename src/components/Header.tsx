@@ -54,7 +54,7 @@ const Header = () => {
   return (
     <header className="bg-white text-gray-900 border-b-2 border-gray-700 py-4 fixed top-0 left-0 w-full z-50">
 
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="mx-auto px-4 mr-4 ml-4">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
@@ -82,7 +82,7 @@ const Header = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
                 </button>
-                <div className="flex flex-col items-center mt-20">
+                <div className="flex flex-col items-center mt-10">
                   <Link href="/BooksPage">
                     <span className="header-text text-gray-900 px-3 py-2 -md  font-semibold 0">
                       {translations.books}
