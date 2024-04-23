@@ -2,8 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import RootLayout from '../layout';
 import { LanguageContext } from '../context/LanguageContext';
-import enTranslations from '../../public/translations/en.json'; // Import English translations
-import frTranslations from '../../public/translations/fr.json'; // Import French translations
+import enTranslations from '../../public/translations/en.json';
+import frTranslations from '../../public/translations/fr.json';
 
 interface Book {
   title: string;

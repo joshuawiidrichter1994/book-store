@@ -8,13 +8,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col min-h-screen"> {/* Use flexbox to ensure Footer sticks to bottom */}
+    <div className="flex flex-col min-h-screen">
       <Head>
         <title>Urban Eagle Books</title>
         <link rel="icon" href="/favicon.ico.png" />
       </Head>
       <Header />
-      <div className="main-content bg-white flex-grow">{children}</div> {/* Use flex-grow to fill remaining space */}
+      <div className="main-content bg-white flex-grow">{children}</div>
       <Footer />
     </div>
   );

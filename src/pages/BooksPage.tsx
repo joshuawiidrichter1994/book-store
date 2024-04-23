@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import RootLayout from '../layout';
 import { LanguageContext } from '../context/LanguageContext';
 import { convertPriceToCurrency } from '../providers/LanguageProvider';
-import enTranslations from '../../public/translations/en.json'; // Import English translations
-import frTranslations from '../../public/translations/fr.json'; // Import French translations
+import enTranslations from '../../public/translations/en.json';
+import frTranslations from '../../public/translations/fr.json';
 
 interface Book {
   title: string;

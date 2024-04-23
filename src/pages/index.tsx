@@ -51,8 +51,6 @@ const IndexPage: React.FC = () => {
           {/* Display first two book images stacked for screens 767px and below */}
           {isMobile && (
             <>
-
-
               <img
                 src={`/images/${bookImages[3]}`}
                 alt="Book 1"
@@ -70,7 +68,7 @@ const IndexPage: React.FC = () => {
 
             </>
           )}
-          {/* Display single book image for desktop and screens above 767px */}
+          {/* Display book image slide for desktop and screens above 767px */}
           {!isMobile && (
             <img
               src={`/images/${bookImages[imageIndex]}`}
