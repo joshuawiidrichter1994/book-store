@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import RootLayout from '../layout';
+import enTranslations from '../../public/translations/en.json';
+import frTranslations from '../../public/translations/fr.json';
+import { LanguageContext } from '../context/LanguageContext';
 
 const IndexPage: React.FC = () => {
   // Array of book image file names
@@ -13,6 +16,11 @@ const IndexPage: React.FC = () => {
     'book-7.jpg',
     'book-8.jpg',
   ];
+
+  
+  const { language } = useContext(LanguageContext);
+
+  const translations = language === 'en' ? enTranslations : frTranslations;
 
   // Determine if it's a mobile device based on window width
   const [isMobile, setIsMobile] = useState(false);
@@ -57,8 +65,8 @@ const IndexPage: React.FC = () => {
                 className="image object-cover w-full h-full"
               />
               <div className="mt-8">              
-                <span className="slogan-text text-center block mb-4 text-2xl font-light">Urban Eagle Books</span>
-                <span className="text-center block mb-8 text-lg font-light">Where Every Page Holds a New Adventure...</span>
+                <span className="slogan-text text-center block mb-4 text-2xl font-light">Urban Eagle {translations['books']}</span>
+                <span className="text-center block mb-8 text-lg font-light">{translations['slogan']}</span>
               </div>
               <img
                 src={`/images/${bookImages[4]}`}

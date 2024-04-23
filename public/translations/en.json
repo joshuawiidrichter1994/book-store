@@ -12,6 +12,7 @@
     "requiredFieldsError": "Please fill out all fields",
     "duplicateBookError": "Book already exists",
     "closeBtn": "Close",
-    "currency": "$"
+    "currency": "$",
+    "slogan": "Where Every Page Holds a New Adventure..."
   }
   
