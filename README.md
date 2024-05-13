@@ -24,7 +24,3 @@
   - in terms of pages, there is a home page, book list page, and an add book page containing the form to add a new book
   - the general design was kept basic, with the main goal in mind being to meet the necessary requirements as per the user stories
   - the site is mobile, tablet, and desktop friendly with a breakpoint at 767px (everything below 767px is for tablet down and everything above 767px is for desktop)
-
-  ### Notes
-
-  I really would've liked to spend a little more time cleaning the code up and getting it 100%, but unfortunately, my current work schedule made it a little difficult. Furthermore, I wanted to get this challenge to you as soon as possible.
